@@ -15,7 +15,7 @@ public class Hooks {
 
     // import the @Before coming from io.cucumber.java
 
-    @Before
+    //@Before
     public void setUp(){
         System.out.println("---> Before: RUNNING BEFORE EACH SCENARIO");
     }
@@ -37,7 +37,7 @@ public class Hooks {
             scenario.attach(screenShot, "image/jpg", scenario.getName());
 
        // }
-        System.out.println("---> After: RUNNING AFTER EACH SCENARIO");
+       // System.out.println("---> After: RUNNING AFTER EACH SCENARIO");
         BrowserUtils.sleep(2);
         Driver.closeDriver();
     }

@@ -41,7 +41,7 @@ public class Driver {
         Depending on the browser type returned from the configuration.properties
         switch statement will determine the case and open the matching one
          */
-            switch (browserType) {
+            switch (browserType) {// using switch
                 case "chrome":
                     //WebDriverManager.chromedriver().setup();// in the real work environment we might have the own dependency to use
                     driver = new ChromeDriver();
